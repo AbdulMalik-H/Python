@@ -9,10 +9,9 @@ def emotico_emoji(message):
 
     # replacing ":)" to "🙂"
     message = message.replace(":)", "🙂")
-    # replacing ":(" to "☹"
-    message = message.replace(":(", "☹")
+    # replacing ":(" to "🙁"
+    message = message.replace(":(", "🙁")
     # print user message 
     print(message)
     
 main()
-
