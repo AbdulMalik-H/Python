@@ -7,8 +7,9 @@ def main():
 # make function to replace ":)" and ":(" with emoji
 def emotico_emoji(message):
 
-# by replacing ":)" to "🙂"
+    # replacing ":)" to "🙂"
     message = message.replace(":)", "🙂")
+    # replacing ":(" to "☹"
     message = message.replace(":(", "☹")
     # print user message 
     print(message)
