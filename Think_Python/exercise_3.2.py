@@ -2,11 +2,11 @@
 # example, do_twice is a function that takes a function object as an argument and calls
 # it twice:
 # def do_twice(f):
-#  f()
-#  f()
+# ....f()
+# ....f()
 # Here’s an example that uses do_twice to call a function named print_spam twice:
 # def print_spam():
-#  print('spam')
+# ....print('spam')
 # do_twice(print_spam)
 
 #=======================================================================================
@@ -21,13 +21,14 @@ def print_spam():
     print("spam")
 
 do_twice(print_spam)
+print()
 
 # 2. Modify do_twice so that it takes two arguments, a function object and a value,
 # and calls the function twice, passing the value as an argument
 
 def do_twice(fun, val):
-    # fun for function
-    # val for value
+    # fun stand for a function
+    # val stand for a value
     fun(val)
     fun(val)
 
@@ -41,15 +42,17 @@ def print_twice(bruce):
 # as an argument.
 
 do_twice(print_twice, "spam")
+print()
 
 # 5. Define a new function called do_four that takes a function object and a value 
 # and calls the function four times, passing the value as a parameter.
 # There should be only two statements in the body of this function, not four.
 
 def do_four(newfun, newval): 
-    # newfun for new function
-    # new val for new value
+    # newfun stand for new function
+    # newval stand for new value
     do_twice(newfun, newval)
     do_twice(newfun, newval)
 
 do_four(print, "spam")
+print()
