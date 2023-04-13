@@ -26,4 +26,5 @@ bob = turtle.Turtle()
 polygon(t=bob, n=5, length=50)
 circul(t=bob, r=100)
 arc(t=bob, r=200, angle=90)
+
 turtle.mainloop()
